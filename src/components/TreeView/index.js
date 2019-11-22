@@ -5,21 +5,16 @@ import "antd/dist/antd.css";
 const { TreeNode } = Tree;
 
 export default class TreeView extends Component {
-  state = {
-    checkedKeys: []
-  };
-
   componentDidMount() {
     const values = localStorage.getItem("checkedPeople");
     if (values) {
-      this.setState({ checkedKeys: values });
       console.log("=> tem dado no storage");
-      console.log(`os dados são: ${values}`);
+      console.log(`Os dados são: ${values}`);
     }
   }
 
   onCheck = checked => {
-    console.log("=> Inseri dados no storage");
+    console.log(`=> Inseri a key ${checked} no storage`);
     localStorage.setItem("checkedPeople", checked);
   };
 

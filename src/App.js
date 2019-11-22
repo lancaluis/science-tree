@@ -23,7 +23,7 @@ export default class App extends Component {
     const { treeData, isNull } = this.state;
     return (
       <div className="container">
-        {/* <img src={brand} alt="Hi Platform" /> */}
+        <img src={brand} alt="Hi Platform" />
         {!isNull ? <Spin /> : <TreeView data={treeData} />}
       </div>
     );
