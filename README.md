@@ -11,4 +11,4 @@ To start the application, run:
 ```bash
 $ yarn start
 ```
-The server will start in port 3000
+The server will start in http://localhost:3000
